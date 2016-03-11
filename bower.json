@@ -1,0 +1,19 @@
+{
+  "name": "Artego",
+  "description": "porfume",
+  "main": "",
+  "authors": [
+    "SDA"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ]
+}
