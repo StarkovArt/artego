@@ -1,7 +1,8 @@
 $(function() {
 
+
 	//SVG Fallback
-	if(!Modernizr.svg) {
+	if (!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
@@ -28,13 +29,15 @@ $(function() {
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();
-		if($("html").hasClass("chrome")) {
+		if ($("html").hasClass("chrome")) {
 			$.smoothScroll();
 		}
-	} catch(err) {
+	} catch (err) {
 
 	};
 
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+	$("img, a").on("dragstart", function(event) {
+		event.preventDefault();
+	});
 
 });
