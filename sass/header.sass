@@ -1,6 +1,13 @@
 @import "bourbon"
 @import "vars.sass"
 
+a
+	color: #fff
+	&:hover
+		color: inherit
+	&:focus, &:active
+		color: inherit
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -11,3 +18,88 @@ body
 
 .hidden
 	display: none
+
+.null
+	margin: 0
+	padding: 0
+
+video
+	position: absolute
+	margin: 0 auto
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	min-width: 100vw
+	min-height: 100vh
+	z-index: -999
+
+.mask
+	background-image: url(../img/grid.png)
+	background-repeat: repeat
+	position: absolute
+	margin: 0 auto
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	min-width: 100vw
+	min-height: 100vh
+	z-index: -998
+
+.header
+	overflow: hidden
+	height: 100vh
+
+.header__wrap
+	position: relative
+	color: #fff
+	height: 90px
+	line-height: 90px
+	background-color: #000
+
+
+
+.header___logo
+	img
+		width: 80%
+		padding-bottom: 15px
+
+.header__basket
+	float: right
+	position: relative
+	i
+		font-size: 40px
+		line-height: 90px
+		cursor: pointer
+	.header__basket-circle
+		height: 25px
+		width: 25px
+		border-radius: 50% 50%
+		background-color: $orange
+		position: absolute
+		top: 12px
+		left: -12px
+		span
+			position: absolute
+			top: inherit
+			left: 7px
+			display: inline-block
+			line-height: 0
+			font-weight: bolder
+			cursor: default
+
+.header__nav
+	ul
+		text-align: center
+		li
+			display: inline-block
+			list-style-type: none
+			i
+				font-size: 40px
+				line-height: inherit
+				padding-right: 5px
+				cursor: pointer
+			a
+				padding: 0 25px
+				display: none
